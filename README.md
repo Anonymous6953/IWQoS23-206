@@ -1,3 +1,6 @@
 # IWQoS23-206
 
-Our code is undergoing a privacy review by our partner company and will be open sourced when the review is complete
+Dataset A: https://github.com/NetManAIOps/KPI-Anomaly-Detection
+
+Datasets B and C contain some private information about the companies we work with. The company is currently undergoing a privacy check and our Datasets B and C will be made public after the privacy information is removed.
+
