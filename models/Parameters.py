@@ -1,5 +1,5 @@
 
-epoch_range = [1, 10]
+epoch_range = [10, 1000]
 lr_range = [1e-5, 1e-2]
 win_len_range = [5, 200]
 
@@ -72,18 +72,19 @@ parameters = [
         {
             'name': "trend",
             'type': "choice",
-            'values': {"add", "mul", "additive", "multiplicative", None},
+            'values': ["add", "mul", "additive", "multiplicative", 'None'],
 
         },
         {
             'name': "seasonal",
             'type': "choice",
-            'values': {"add", "mul", "additive", "multiplicative", None}
+            'values': ["add", "mul", "additive", "multiplicative", 'None']
 
         },
         {
             'name':"damped_trend",
-            'type': "bool",
+            'type': "choice",
+            'values': [True, False]
 
         },
         {
@@ -95,7 +96,7 @@ parameters = [
         {
             'name': "initialization_method",
             'type': "choice",
-            'values': [None, 'estimated', 'heuristic', 'legacy-heuristic', 'known']
+            'values': ['None', 'estimated', 'heuristic', 'legacy-heuristic', 'known']
         },
 
 ]
